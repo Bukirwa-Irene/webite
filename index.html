@@ -2,13 +2,11 @@
 <html>
 <head>
 <style>
-/* Link Styling */
 a:link { color: red; }
 a:visited { color: blue; }
 a:hover { color: white; }
 a:active { color: green; }
 
-/* Big Box Styling */
 .big-box {
   border: 3px solid black;
   padding: 20px;
@@ -17,26 +15,23 @@ a:active { color: green; }
   background-color: #e9ecef;
 }
 
-/* Flex container for arranging sub-boxes in columns */
 .column-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-/* Sub Box Styling */
 .box {
-  flex: 1 1 calc(33.33% - 15px); /* Three columns with space between */
+  flex: 1 1 calc(33.33% - 15px);
   border: 2px solid black;
   padding: 15px;
   border-radius: 5px;
-  background-color: #f0f8ff;  /* Light blue background */
-  width: 100px;               /* Reduced width */
-  height: 120px;              /* Reduced height */
-  overflow: auto;             /* Ensures content stays inside if it overflows */
+  background-color: #f0f8ff;  
+  width: 100px;              
+  height: 120px;              
+  overflow: auto;             
 }
 
-/* Header Styling */
 .header {
   display: flex;
   justify-content: center;
@@ -56,7 +51,6 @@ a:active { color: green; }
   border-radius: 50%;
 }
 
-/* Navigation Styling */
 nav {
   text-align: center;
   margin: 0;
@@ -64,28 +58,28 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: center;  /* Center the navigation links */
+  justify-content: center;  
   padding: 0;
-  list-style: none;         /* Remove default list styling */
-  gap: 20px;                /* Space between links */
+  list-style: none;         
+  gap: 20px;                
 }
 
 nav ul li {
-  display: inline-block;    /* Ensure each item is aligned inline */
+  display: inline-block;    
 }
 
 nav ul li a {
-  text-decoration: none;    /* Remove underline */
+  text-decoration: none;    
   font-size: 18px;
-  color: #333;              /* Text color */
-  padding: 10px 20px;       /* Padding for clickable area */
-  border: none;             /* Remove border around the links */
-  transition: background-color 0.3s; /* Smooth background color transition */
+  color: #333;              
+  padding: 10px 20px;       
+  border: none;             
+  transition: background-color 0.3s; 
 }
 
 nav ul li a:hover {
-  background-color: #333;   /* Add background color on hover */
-  color: white;             /* Change text color on hover */
+  background-color: #333;   
+  color: white;             
 }
 
 /* Footer Styling */
