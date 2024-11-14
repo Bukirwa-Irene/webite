@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/* Link Styling */
+a:link { color: red; }
+a:visited { color: blue; }
+a:hover { color: white; }
+a:active { color: green; }
+
+/* Big Box Styling */
+.big-box {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+/* Flex container for arranging sub-boxes in columns */
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Sub Box Styling */
+.box {
+  flex: 1 1 calc(33.33% - 15px); /* Three columns with space between */
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f0f8ff;  /* Light blue background */
+  width: 100px;               /* Reduced width */
+  height: 120px;              /* Reduced height */
+  overflow: auto;             /* Ensures content stays inside if it overflows */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.header h2 {
+  color: #333;
+}
+
+.image-box img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Navigation Styling */
+nav {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;  /* Center the navigation links */
+  padding: 0;
+  list-style: none;         /* Remove default list styling */
+  gap: 20px;                /* Space between links */
+}
+
+nav ul li {
+  display: inline-block;    /* Ensure each item is aligned inline */
+}
+
+nav ul li a {
+  text-decoration: none;    /* Remove underline */
+  font-size: 18px;
+  color: #333;              /* Text color */
+  padding: 10px 20px;       /* Padding for clickable area */
+  border: none;             /* Remove border around the links */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+  background-color: #333;   /* Add background color on hover */
+  color: white;             /* Change text color on hover */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.marquee-text {
+  display: inline-block;
+}
+</style>
+
+<title>My Personal Website</title>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="image-box">
+    <img src="irene.jpg" alt="Profile Picture of Bukirwa Irene">
+  </div>
+  <div class="text-box">
+    <h2>BUKIRWA IRENE - LIS STUDENT AT EASLIS</h2>
+    <nav>
+      <ul>
+        <li><a href="#schools">Schools Attended</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#career-prospects">Career Prospects</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Schools Attended Section -->
+<div class="big-box" id="schools">
+  <h2>Schools Attended</h2>
+  <div class="column-container">
+    <div class="box">
+      <strong>MAKERERE UNIVERSITY</strong><br>
+      2022 - Present<br>
+      Bachelor of Library and Information Science
+    </div>
+    <div class="box">
+      <strong>IMPIGI MIXED SSS</strong><br>
+      Secondary Education<br>
+      2013 - 2018
+    </div>
+    <div class="box">
+      <strong>IMPIGI PARENTS PRIMARY</strong><br>
+      Primary Education<br>
+      2006 - 2012
+    </div>
+  </div>
+</div>
+
+<!-- Hobbies Section -->
+<div class="big-box" id="hobbies">
+  <h3>My Hobbies</h3>
+  <div class="column-container">
+    <div class="box">Playing netball</div>
+    <div class="box">Watching movies</div>
+    <div class="box">Swimming</div>
+    <div class="box">Reading books</div>
+  </div>
+</div>
+
+<!-- Work Experience Section -->
+<div class="big-box" id="work-experience">
+  <h3>My Work Experience</h3>
+  <div class="column-container">
+    <div class="box">
+      <strong>Intern</strong> - Prudential Insurance Company<br>
+      2024<br>
+      Role: Sales Agent
+    </div>
+    <div class="box">
+      <strong>Student Intern</strong> - Victoria University<br>
+      2024<br>
+      Role: Assistant Librarian
+    </div>
+    <div class="box">Skills: Good in cataloguing</div>
+  </div>
+</div>
+
+<!-- Career Prospects Section -->
+<div class="big-box" id="career-prospects">
+  <h2>Career Prospects</h2>
+  <div class="column-container">
+    <div class="box">Information Scientist</div>
+    <div class="box">Librarian - Passion for classification and cataloguing</div>
+    <div class="box">Farm Manager</div>
+  </div>
+</div>
+
+<footer>
+  <p class="marquee-text">&copy; 2025 BUKIRWA IRENE WILLIAMS. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
